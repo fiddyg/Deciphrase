@@ -36,7 +36,7 @@
 	footer {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 		padding: 12px;
 	}
