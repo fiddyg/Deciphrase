@@ -18,11 +18,11 @@
 			<span aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</span>
+			<span aria-current={$page.url.pathname === '/leaderboard' ? 'page' : undefined}>
+				<a href="/leaderboard">Leaderboard</a>
+			</span>
 			<span aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
-			</span>
-			<span aria-current={$page.url.pathname === '/sverdle' ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
 			</span>
 		</span>
 	</footer>
@@ -50,8 +50,9 @@
   	justify-content: space-between;
   	align-items: center;
   	color: white;
- 		margin-top: 68vh;
   	font-size: 1rem;
+		margin: 1em;
+		margin-top: 20vh;
 	}
 
 	footer a {

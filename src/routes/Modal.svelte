@@ -67,7 +67,7 @@
     padding: 1em;
     border-radius: 0.2em;
     background: #2aaa8a;
-    border: 5px solid #3d2814;
+    border: 5px solid white;
     text-align: left;
   }
 
@@ -82,7 +82,7 @@
     background-color: #2aaa8a;
     cursor: pointer;
     transition: 0.25s;
-    color: #3d2814;
+    color: white;
     text-align: center;
   }
 
