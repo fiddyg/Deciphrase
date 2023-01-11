@@ -32,7 +32,6 @@
 	.app {
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
 	}
 
 	main {
@@ -51,7 +50,6 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-		padding: 12px;
 		text-align: center;
 	}
 
@@ -65,7 +63,8 @@
 
 	span {
 		display: inline;
-		margin: 1em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 
 	@media (min-width: 480px) {
