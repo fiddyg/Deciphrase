@@ -47,10 +47,11 @@
 
 	footer {
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		text-align: center;
+  	justify-content: space-between;
+  	align-items: center;
+  	color: white;
+ 		margin-top: 68vh;
+  	font-size: 1rem;
 	}
 
 	footer a {
