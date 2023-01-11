@@ -67,7 +67,6 @@
     padding: 1em;
     border-radius: 0.2em;
     background: #2aaa8a;
-    color: #3d2814;
     border: 5px solid #3d2814;
     text-align: left;
   }

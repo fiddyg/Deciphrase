@@ -38,7 +38,6 @@
     padding: none;
     font-size: 1em;
     font-weight: 500;
-    color: #3d2814;
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
