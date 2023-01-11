@@ -5,7 +5,9 @@
 </script>
 
 <header>
-	<h2>Search For Truth</h2>
+	<div>
+		<h2>Search For Truth</h2>
+	</div>
 
 	<nav>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -38,9 +40,14 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
-	
+	h2 {
+		color: black;
+		font-weight: 600;
+		font-size: 1.5rem;
+	}
 
 	nav {
 		display: flex;
