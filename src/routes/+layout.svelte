@@ -14,19 +14,17 @@
 	<footer>
 		<h3>&copy 2023 SJRT</h3>
 		
-		<nav>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+		<span>
+			<span aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+			</span>
+			<span aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/sverdle' ? 'page' : undefined}>
+			</span>
+			<span aria-current={$page.url.pathname === '/sverdle' ? 'page' : undefined}>
 				<a href="/sverdle">Sverdle</a>
-			</li>
-		</ul>
-	</nav>
+			</span>
+		</span>
 	</footer>
 </div>
 
@@ -54,10 +52,20 @@
 		justify-content: space-around;
 		align-items: center;
 		padding: 12px;
+		text-align: center;
 	}
 
 	footer a {
 		font-weight: bold;
+	}
+
+	h3 {
+		display: inline;
+	}
+
+	span {
+		display: inline;
+		margin: 1em;
 	}
 
 	@media (min-width: 480px) {
