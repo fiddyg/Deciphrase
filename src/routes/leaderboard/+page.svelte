@@ -104,7 +104,6 @@
 		};
 	}}
 >
-	<a class="how-to-play" href="/sverdle/how-to-play">How to play</a>
 
 	<div class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
 		{#each Array(6) as _, row}
@@ -208,27 +207,6 @@
 		flex: 1;
 	}
 
-	.how-to-play {
-		color: var(--color-text);
-	}
-
-	.how-to-play::before {
-		content: 'i';
-		display: inline-block;
-		font-size: 0.8em;
-		font-weight: 900;
-		width: 1em;
-		height: 1em;
-		padding: 0.2em;
-		line-height: 1;
-		border: 1.5px solid var(--color-text);
-		border-radius: 50%;
-		text-align: center;
-		margin: 0 0.5em 0 0;
-		position: relative;
-		top: -0.05em;
-	}
-
 	.grid {
 		--width: min(100vw, 40vh, 380px);
 		max-width: var(--width);
@@ -276,17 +254,18 @@
 	}
 
 	.letter.missing {
-		background: rgba(255, 255, 255, 0.5);
-		color: rgba(0, 0, 0, 0.5);
+		background: red;
+		color: white;
 	}
 
 	.letter.exact {
-		background: var(--color-theme-2);
+		background: green;
 		color: white;
 	}
 
 	.letter.close {
 		border: 2px solid var(--color-theme-2);
+		background: coral;
 	}
 
 	.selected {

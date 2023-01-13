@@ -1,5 +1,7 @@
 <script>
-
+    const correct = () => {
+        
+    }
 </script>
 
 <main>
