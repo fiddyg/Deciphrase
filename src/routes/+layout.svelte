@@ -47,10 +47,10 @@
 
 	footer {
 		display: flex;
-  	justify-content: space-between;
-  	align-items: center;
-  	color: white;
-  	font-size: 1rem;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		font-size: 1rem;
 		margin: 1em;
 		margin-top: 20vh;
 	}

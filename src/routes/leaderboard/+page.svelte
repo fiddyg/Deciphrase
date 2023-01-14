@@ -38,6 +38,10 @@
 		margin: 1rem 0;
 	}
 
+	.person:nth-last-child(n) {
+		margin-bottom: 0;
+	}
+
 	span {
 		margin: 0 1rem;
 		display: flex;

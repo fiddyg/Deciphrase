@@ -37,6 +37,7 @@ a {
 
 a:hover {
   color: white;
+  text-decoration: underline;
 }
 
 h2 {
@@ -66,6 +67,7 @@ button {
 button:hover {
   border-color: white;
   color: white;
+  text-decoration: underline;
 }
 button:focus,
 button:focus-visible {
