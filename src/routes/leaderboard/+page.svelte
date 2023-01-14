@@ -1,24 +1,25 @@
 <script>	
+	let src = 'img/me.png';
+
 	let players = [
-		{ img: 'profileImg/me.png', name: 'Spencer Gale', points: 25 },
-		{ name: 'Maru' },
-		{ name: 'Henri The Existential Cat' }
+		{ name: 'Spencer Gale', points: 25 },
+		{ name: 'Truman Kington', points: 20 },
+		{ name: 'Jesse Speir', points: 15 }
 	];
 </script>
 
 <main>
 
 <ul>
-	{#each players as { img, name, points }, i}
+	{#each players as { name, points }, i}
 		<div class="person">
 			<span>
-				<h4>{ i + 1 }: </h4>
-				{img} 
-				<h4>{name}</h4> 
+				<h4>{ i + 1 }</h4>
+				<img {src} alt="profile"> 
+				<h4 class="name">{name}</h4> 
 				<p>{points}</p>
 			</span>
 		</div>
-
 
 	{/each}
 </ul>
@@ -34,6 +35,7 @@
 	.person {
 		border: 2px solid white;
 		width: 100%;
+		margin: 1rem 0;
 	}
 
 	span {
@@ -45,6 +47,10 @@
 
 	h4, p {
 		display: inline;
+	}
+
+	.name {
+		margin: 1rem;
 	}
 
 
