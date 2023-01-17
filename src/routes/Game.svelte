@@ -1,5 +1,6 @@
 <script>
     import {sentences} from './sentences.js'
+		import HowToPlay from './HowToPlay.svelte'
 
     let numberOfGuesses = 1;
     const maxGuesses = 5;
@@ -16,15 +17,34 @@
 
 <main>
 
-<ul>
-	{#each cats as { id, name }, i}
-		<li>
-			{i + 1}: {name}
-		</li>
-	{/each}
-</ul>
+	<HowToPlay />
+
+	<h2>mrodan cesnetne</h2>
+
+	
+		{#each cats as { id, name }, i}
+			<div class="playingfield">
+				<span class="block">
+					{i + 1}: {name}
+				</span>
+			</div>
+			
+		{/each}
+	
 </main>
 
 <style>
+	main {
+		text-align: center;
+	}
 
+	.playingfield {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.block {
+
+	}
 </style>
