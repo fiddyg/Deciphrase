@@ -43,8 +43,4 @@
 		align-items: center;
 		justify-content: center;
 	}
-
-	.block {
-
-	}
 </style>
