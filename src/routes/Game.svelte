@@ -8,9 +8,9 @@
     let rightGuessString = sentences[Math.floor(Math.random * sentences.length)];
 
     let cats = [
-		{ id: 'J---aiyznGQ', name: 'Keyboard Cat' },
-		{ id: 'z_AbfPXTKms', name: 'Maru' },
-		{ id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }
+		{ name: 'Keyboard Cat' },
+		{ name: 'Maru' },
+		{ name: 'Henri The Existential Cat' }
 	];
 </script>
 
@@ -18,9 +18,9 @@
 
 <ul>
 	{#each cats as { id, name }, i}
-		<li><a target="_blank" href="https://www.youtube.com/watch?v={id}" rel="noreferrer">
+		<li>
 			{i + 1}: {name}
-		</a></li>
+		</li>
 	{/each}
 </ul>
 </main>
