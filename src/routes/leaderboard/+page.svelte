@@ -1,5 +1,5 @@
 <script>	
-	let src = 'img/me.png';
+	let src = './img/me.png';
 
 	let players = [
 		{ name: 'Spencer Gale', points: 25 },
