@@ -9,9 +9,9 @@
     let rightGuessString = sentences[Math.floor(Math.random * sentences.length)];
 
     let cats = [
-		{ name: 'Keyboard Cat' },
-		{ name: 'Maru' },
-		{ name: 'Henri The Existential Cat' }
+		{ name: 'a' },
+		{ name: 'b' },
+		{ name: 'c' }
 	];
 </script>
 
@@ -25,7 +25,7 @@
 		{#each cats as { id, name }, i}
 			<div class="playingfield">
 				<span class="block">
-					{i + 1}: {name}
+					{name}
 				</span>
 			</div>
 			
@@ -42,5 +42,16 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	
+	.block {
+		border: 2px solid white;
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: .5rem;
+		font-size: 1rem;
 	}
 </style>
