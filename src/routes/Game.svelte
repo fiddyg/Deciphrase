@@ -8,10 +8,10 @@
     let currentGuess = [];
     let rightGuessString = sentences[Math.floor(Math.random * sentences.length)];
 
-    let cats = [
-		{ name: 'a' },
-		{ name: 'b' },
-		{ name: 'c' }
+    let sentence = [
+		{ letter: 'a' },
+		{ letter: 'b' },
+		{ letter: 'c' }
 	];
 </script>
 
@@ -21,15 +21,17 @@
 
 	<h2>mrodan cesnetne</h2>
 
-	
-		{#each cats as { id, name }, i}
-			<div class="playingfield">
+	<div class="playingfield">
+
+		{#each sentence as { id, letter }, i}
+			
 				<span class="block">
 					{name}
-				</span>
-			</div>
+				</span>	
 			
 		{/each}
+
+	</div>
 	
 </main>
 
