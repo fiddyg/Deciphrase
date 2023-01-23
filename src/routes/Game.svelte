@@ -1,18 +1,26 @@
 <script>
-    import {sentences} from './sentences.js'
-		import HowToPlay from './HowToPlay.svelte'
+	import {sentences} from './sentences.js'
+	import HowToPlay from './HowToPlay.svelte'
 
-    let numberOfGuesses = 1;
-    const maxGuesses = 5;
-    let guessesRemaining = numberOfGuesses;
-    let currentGuess = [];
-    let rightGuessString = sentences[Math.floor(Math.random * sentences.length)];
+	let numberOfGuesses = 1;
+	const maxGuesses = 5;
+	let guessesRemaining = numberOfGuesses;
+	let currentGuess = [];
+	let rightGuessString = sentences[Math.floor(Math.random * sentences.length)];
 
-    let sentence = [
-		{ letter: 'a' },
-		{ letter: 'b' },
-		{ letter: 'c' }
+	let block = [
+		{ place: '1' },
+		{ place: '2' },
+		{ place: '3' }
 	];
+
+	let length = sentences.length;
+
+	let randomNumber = Math.floor(Math.random() * length + 1)
+
+	let randomSentence = sentences[randomNumber]
+
+		
 </script>
 
 <main>
@@ -23,15 +31,17 @@
 
 	<div class="playingfield">
 
-		{#each sentence as { id, letter }, i}
+		{#each block as { place }}
 			
 				<span class="block">
-					{ sentences }
+					{ randomSentence }
 				</span>	
 			
 		{/each}
 
 	</div>
+
+	<p>{randomNumber}</p>
 	
 </main>
 
