@@ -8,5 +8,5 @@ export const sentences = [
     'hello from outer space',
     'thank you for playing this game',
     'i wonder what this year will be like',
-    'this is really cool'
+    'this is really cool',
 ]
