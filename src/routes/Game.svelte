@@ -26,7 +26,7 @@
 		{#each sentence as { id, letter }, i}
 			
 				<span class="block">
-					{name}
+					{ sentences }
 				</span>	
 			
 		{/each}
@@ -48,12 +48,13 @@
 	
 	.block {
 		border: 2px solid white;
-		width: 2rem;
-		height: 2rem;
+		/* width: 2rem;
+		height: 2rem; */
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin: .5rem;
 		font-size: 1rem;
+		background: black;
 	}
 </style>
