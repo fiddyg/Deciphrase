@@ -6,7 +6,7 @@
 	const maxGuesses = 5;
 	let guessesRemaining = numberOfGuesses;
 	let currentGuess = [];
-	let rightGuessString = sentences[Math.floor(Math.random * sentences.length)];
+	
 
 	let block = [
 		{ place: '1' },
