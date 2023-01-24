@@ -18,7 +18,8 @@
 
 	let randomNumber = Math.floor(Math.random() * length + 1)
 
-	let randomSentence = sentences[randomNumber]
+	let randomSentence = sentences[randomNumber] 
+
 
 	
 
@@ -44,6 +45,7 @@
 	</div>
 
 	<p>{randomNumber}</p>
+	<p>{randomSentence}</p>
 	
 </main>
 
