@@ -69,6 +69,5 @@
 		justify-content: center;
 		margin: .5rem;
 		font-size: 1rem;
-		background: black;
 	}
 </style>
