@@ -20,12 +20,15 @@
 
 	let randomSentence = sentences[randomNumber] 
 
-  const hardMode = (sentence) => {
+	const easyMode = (sentence) => {
 		
 	}
-	
 
-		
+  const hardMode = (sentence) => {
+
+	}
+	
+	
 </script>
 
 <main>
