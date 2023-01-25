@@ -21,9 +21,6 @@
 			<span aria-current={$page.url.pathname === '/leaderboard' ? 'page' : undefined}>
 				<a href="/leaderboard">Leaderboard</a>
 			</span>
-			<span aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</span>
 		</span>
 	</footer>
 </div>
