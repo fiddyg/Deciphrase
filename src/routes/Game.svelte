@@ -19,6 +19,10 @@
 	let randomNumber = Math.floor(Math.random() * length)
 
 	let randomSentence = sentences[randomNumber] 
+
+  const hardMode = (sentence) => {
+		
+	}
 	
 
 		
