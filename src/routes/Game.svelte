@@ -16,11 +16,9 @@
 
 	let length = sentences.length;
 
-	let randomNumber = Math.floor(Math.random() * length + 1)
+	let randomNumber = Math.floor(Math.random() * length) + 1
 
 	let randomSentence = sentences[randomNumber] 
-
-
 	
 
 		

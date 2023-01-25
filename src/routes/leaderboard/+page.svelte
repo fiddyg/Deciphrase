@@ -1,5 +1,4 @@
 <script>	
-	let src = './img/me.png';
 
 	let players = [
 		{ name: 'Spencer Gale', points: 25 },
@@ -15,7 +14,6 @@
 		<div class="person">
 			<span>
 				<h4>{ i + 1 }</h4>
-				<img {src} alt="profile"> 
 				<h4 class="name">{name}</h4> 
 				<p>{points}</p>
 			</span>

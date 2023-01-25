@@ -9,4 +9,5 @@ export const sentences = [
     'thank you for playing this game',
     'i wonder what this year will be like',
     'this is really cool',
+    ''
 ]
