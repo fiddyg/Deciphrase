@@ -6,7 +6,6 @@
 	const maxGuesses = 5;
 	let guessesRemaining = numberOfGuesses;
 	let currentGuess = [];
-	
 
 	let block = [
 		{ place: '1' },
@@ -28,7 +27,8 @@
 
 	}
 	
-	
+
+
 </script>
 
 <main>
