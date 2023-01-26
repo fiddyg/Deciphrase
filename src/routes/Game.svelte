@@ -20,7 +20,7 @@
 	let randomSentence = sentences[randomNumber] 
 
 	const easyMode = () => {
-		
+
 	}
 
 	const hardMode = () => {
