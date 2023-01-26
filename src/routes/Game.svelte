@@ -20,11 +20,11 @@
 
 	let randomSentence = sentences[randomNumber] 
 
-	const easyMode = (sentence) => {
+	const easyMode = () => {
 		
 	}
 
-  const hardMode = (sentence) => {
+	const hardMode = () => {
 
 	}
 	
@@ -35,14 +35,14 @@
 
 	<HowToPlay />
 
-	<h2>mrodan cesnetne</h2>
+	<h2>{ randomSentence }</h2>
 
 	<div class="playingfield">
 
 		{#each block as { place }}
 			
 				<span class="block">
-					{ randomSentence }
+					
 				</span>	
 			
 		{/each}
@@ -67,8 +67,8 @@
 	
 	.block {
 		border: 2px solid white;
-		/* width: 2rem;
-		height: 2rem; */
+		width: 2rem;
+		height: 2rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
