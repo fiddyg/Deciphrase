@@ -49,7 +49,6 @@
 		color: white;
 		font-size: 1rem;
 		margin: 1em;
-		margin-top: 20vh;
 	}
 
 	footer a {
