@@ -26,8 +26,6 @@
 	const hardMode = () => {
 
 	}
-
-
 	
 
 
@@ -53,7 +51,6 @@
 
 	<p>{randomNumber}</p>
 	<p>{randomSentence}</p>
-
 	
 </main>
 
