@@ -7,7 +7,7 @@
 
 <header>
 	<div class='title'>
-		<h2>Search For Truth</h2>
+		<h2>Deciphrase</h2>
 	</div>
 
 
