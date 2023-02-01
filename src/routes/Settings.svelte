@@ -42,6 +42,7 @@ settings
   }
 
   .material-symbols-outlined:hover {
+    color: #0a4939;;
     font-variation-settings:
     'FILL' 1
   }
