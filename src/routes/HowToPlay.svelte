@@ -25,11 +25,13 @@
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.25s;
+    padding: .5rem
   }
   button:hover {
-    border-color: white;
     color: white;
+    background-color: #0a4939;
+    border-radius: .7rem;
+    text-decoration: none;
   }
   button:focus,
   button:focus-visible {

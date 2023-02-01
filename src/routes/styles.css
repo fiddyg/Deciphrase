@@ -32,12 +32,13 @@ header {
 a {
   color: white;
   text-decoration: none;
-  transition: 0.25s;
+  padding: .5rem;
 }
 
 a:hover {
   color: white;
-  text-decoration: underline;
+  background-color: #0a4939;
+  border-radius: .7rem;
 }
 
 h2 {
@@ -64,11 +65,13 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: white;
   color: white;
   text-decoration: underline;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

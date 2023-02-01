@@ -74,21 +74,23 @@
   button {
     border-radius: 0;
     border: none;
-    padding: none;
+    padding: .5rem;
+    margin: 1em;
     font-size: 1em;
     font-weight: 500;
     color: #3d2814;
     font-family: inherit;
     background-color: #2aaa8a;
     cursor: pointer;
-    transition: 0.25s;
     color: white;
     text-align: center;
   }
 
   button:hover {
-    border-color: white;
     color: white;
+    background-color: #0a4939;
+    border-radius: .7rem;
+    text-decoration: none;
   }
 
   button:focus,
