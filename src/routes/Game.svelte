@@ -1,7 +1,6 @@
 <script>
 	import {sentences} from './sentences.js'
 	import HowToPlay from './HowToPlay.svelte'
-	import {phrases} from './phrases.json'
 
 	let numberOfGuesses = 1;
 	const maxGuesses = 5;
