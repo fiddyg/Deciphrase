@@ -74,5 +74,6 @@
 		justify-content: center;
 		margin: .5rem;
 		font-size: 1rem;
+		border-radius: 50%;
 	}
 </style>
