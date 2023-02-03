@@ -69,7 +69,6 @@ button {
 button:hover {
   border-color: white;
   color: white;
-  text-decoration: underline;
 }
 
 button:focus,

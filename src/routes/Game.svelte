@@ -10,7 +10,8 @@
 	let block = [
 		{ place: '1' },
 		{ place: '2' },
-		{ place: '3' }
+		{ place: '3' },
+		{ place: '4' } 
 	];
 
 	let length = sentences.length;
@@ -48,9 +49,6 @@
 		{/each}
 
 	</div>
-
-	<p>{randomNumber}</p>
-	<p>{randomSentence}</p>
 	
 </main>
 

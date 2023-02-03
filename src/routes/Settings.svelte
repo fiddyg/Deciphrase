@@ -4,7 +4,7 @@
 </script>
 
 <button on:click={() => (showModal = true)}> <span class="material-symbols-outlined">
-settings
+Settings
 </span> </button>
 
 
