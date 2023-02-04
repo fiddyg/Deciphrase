@@ -26,7 +26,6 @@
     background-color: transparent;
     cursor: pointer;
     padding: .5rem;
-    font-weight: 900;
   }
   button:hover {
     color: white;
