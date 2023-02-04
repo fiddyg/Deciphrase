@@ -4,9 +4,7 @@
 </script>
 
 <button on:click={() => (showModal = true)}> 
-  <span class="material-symbols-outlined">
-    Settings
-  </span> 
+  Settings
 </button>
 
 
@@ -28,6 +26,13 @@
     font-size: 1em;
     background-color: transparent;
     cursor: pointer;
+    padding: .5rem;
+    margin: 2rem;
+  }
+
+  button:hover {
+    background-color: #0a4939;
+    border-radius: .7rem;
   }
 
   button:focus,
@@ -44,19 +49,4 @@
     align-items: center;
     justify-content: center;
   }
-
-  .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-  }
-
-  .material-symbols-outlined:hover {
-    color: #0a4939;;
-    font-variation-settings:
-    'FILL' 1
-  }
-
 </style>
