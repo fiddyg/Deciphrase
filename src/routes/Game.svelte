@@ -20,10 +20,10 @@
 	let randomNumber = Math.floor(Math.random() * length)
 
 	let randomSentence = sentences[randomNumber] 
-	let randomPhrase = phrases[randomNumber] 
+	let randomPhrase = phrases.phrase1
 
 	const easyMode = () => {
-
+		
 	}
 
 	const hardMode = () => {

@@ -3,18 +3,20 @@
   let showModal = false;
 </script>
 
-<button on:click={() => (showModal = true)}> <span class="material-symbols-outlined">
-Settings
-</span> </button>
+<button on:click={() => (showModal = true)}> 
+  <span class="material-symbols-outlined">
+    Settings
+  </span> 
+</button>
 
 
 {#if showModal}
   <Modal on:close={() => (showModal = false)}>
     <h2 slot="header">Settings</h2>
 
-    <p>
-      Hard Mode
-    </p>
+    <div class="content">
+      <p>Hard Mode</p>
+    </div>
   </Modal>
 {/if}
 
@@ -31,6 +33,16 @@ Settings
   button:focus,
   button:focus-visible {
     outline: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .material-symbols-outlined {
