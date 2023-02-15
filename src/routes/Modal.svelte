@@ -66,7 +66,7 @@
     transform: translate(-50%, -50%);
     padding: 1em;
     border-radius: 0.2em;
-    background: #2aaa8a;
+    background: url(https://img.rawpixel.com/private/static/images/website/2022-05/px650847-image-kwvvah0o.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c0330b10186d1c1401512f3165107693);
     border: 5px solid white;
     text-align: left;
   }
@@ -78,17 +78,16 @@
     margin: 1em;
     font-size: 1em;
     font-weight: 500;
-    color: #3d2814;
+    color: black;
     font-family: inherit;
-    background-color: #2aaa8a;
     cursor: pointer;
-    color: white;
     text-align: center;
+    background: none;
   }
 
   button:hover {
     color: white;
-    background-color: #0a4939;
+    background-color: black;
     border-radius: .7rem;
     text-decoration: none;
   }
