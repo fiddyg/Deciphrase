@@ -33,9 +33,8 @@
     background-color: transparent;
     cursor: pointer;
     padding: .5rem;
-    margin: 2rem;
   }
-  
+
   button:focus,
   button:focus-visible {
     outline: none;
@@ -60,7 +59,6 @@
   }
 
   .material-symbols-outlined:hover {
-    color: #0a4939;
     font-variation-settings:
     'FILL' 1,
     'wght' 400,

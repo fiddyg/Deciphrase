@@ -68,7 +68,7 @@
 	}
 	
 	.block {
-		border: 2px solid white;
+		border: 2px solid black;
 		width: 2rem;
 		height: 2rem;
 		display: flex;
