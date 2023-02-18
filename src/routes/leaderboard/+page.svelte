@@ -31,7 +31,7 @@
 	}
 
 	.person {
-		border: 2px solid white;
+		border: 2px solid black;
 		width: 100%;
 		margin: 1rem 0;
 	}
