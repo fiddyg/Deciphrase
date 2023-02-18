@@ -3,8 +3,14 @@
   let showModal = false;
 </script>
 
+<svelte:head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</svelte:head>
+
 <button on:click={() => (showModal = true)}> 
-  Settings
+  <span class="material-symbols-outlined">
+    settings
+  </span>
 </button>
 
 
@@ -27,12 +33,6 @@
     background-color: transparent;
     cursor: pointer;
     padding: .5rem;
-    margin: 2rem;
-  }
-
-  button:hover {
-    background-color: #0a4939;
-    border-radius: .7rem;
   }
 
   button:focus,
@@ -48,5 +48,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+  .material-symbols-outlined:hover {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
   }
 </style>

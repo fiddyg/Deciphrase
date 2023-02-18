@@ -4,6 +4,10 @@
 	import { page } from '$app/stores';
 </script>
 
+<svelte:head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</svelte:head>
+
 <div class="app">
 	<Header />
 
@@ -13,15 +17,6 @@
 
 	<footer>
 		<h3>&copy 2023 SJRT</h3>
-		
-		<span>
-			<span aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</span>
-			<span aria-current={$page.url.pathname === '/leaderboard' ? 'page' : undefined}>
-				<a href="/leaderboard">Leaderboard</a>
-			</span>
-		</span>
 	</footer>
 </div>
 
@@ -49,6 +44,7 @@
 		color: white;
 		font-size: 1rem;
 		margin: 1em;
+		text-align: center;
 	}
 
 	footer a {
@@ -57,6 +53,7 @@
 
 	h3 {
 		display: inline;
+		color: black;
 	}
 
 	span {

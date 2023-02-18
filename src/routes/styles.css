@@ -7,8 +7,10 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: white;
-  background-color: #2AAA8A;
+  color: black;
+  background: url(https://img.rawpixel.com/private/static/images/website/2022-05/px650847-image-kwvvah0o.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c0330b10186d1c1401512f3165107693);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,13 +32,13 @@ header {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: .5rem;
 }
 
 a:hover {
-  color: white;
+  color: black;
   background-color: #0a4939;
   border-radius: .7rem;
 }
@@ -55,20 +57,19 @@ h2 {
 
 button {
   border-radius: 8px;
-  border: 3px solid white;
+  border: 3px solid black;
   padding: 2em 4em;
   font-size: 1em;
-  font-weight: 500;
-  color: white;
+  font-weight: 700;
+  color: black;
   font-family: inherit;
-  background-color: #2aaa8a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: white;
-  color: white;
+  border-color: black;
+  color: black;
 }
 
 button:focus,
