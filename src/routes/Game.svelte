@@ -20,7 +20,7 @@
 	let randomNumber = Math.floor(Math.random() * length)
 
 	let randomSentence = sentences[randomNumber] 
-	let randomPhrase = phrases.phrase1
+
 
 	const easyMode = () => {
 		
@@ -52,7 +52,11 @@
 
 	</div>
 
-	<p>{phrases.phrase1.phrase}</p>
+	{#each phrases as {phrase, from, saidBy} }
+		<p>{phrase}</p>
+		<p>{from}</p>
+		<p>{saidBy}</p>
+	{/each}
 	
 </main>
 

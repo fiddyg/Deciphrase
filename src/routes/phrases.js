@@ -1,5 +1,5 @@
-const phrases = {
-  phrase1: {
+const phrases = [
+  {
     phrase: 'ay caramba',
     words: [
       'ay', 
@@ -18,7 +18,7 @@ const phrases = {
       'Become famous when Bart Simpson said it in 1988 in the Simpsons short The Art Museum'
     ]
   },
-  phrase2: {
+  {
     phrase: 'yabba dabba doo',
     words: [
       'yabba',
@@ -29,7 +29,6 @@ const phrases = {
     saidBy: 'Fred Flintstone',
     picture: 'Flintstone Img'
   }
-}
-
+]
 
 export default phrases
