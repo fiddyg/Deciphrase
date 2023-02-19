@@ -52,7 +52,7 @@
 
 	</div>
 
-	{#each phrases as {phrase, from, saidBy} }
+	{#each phrases as {phrase, from, saidBy}, i }
 		<p>{phrase}</p>
 		<p>{from}</p>
 		<p>{saidBy}</p>
