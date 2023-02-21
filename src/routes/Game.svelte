@@ -1,7 +1,6 @@
 <script>
-	import {sentences} from './sentences.js'
 	import HowToPlay from './HowToPlay.svelte'
-	import phrases from './phrases'
+	import {phrases} from './phrases'
 
 	let numberOfGuesses = 1;
 	const maxGuesses = 5;
@@ -15,11 +14,11 @@
 		{ place: '4' } 
 	];
 
-	let length = sentences.length;
+	let length = phrases.length;
 
 	let randomNumber = Math.floor(Math.random() * length)
 
-	let randomSentence = sentences[randomNumber] 
+	let randomPhrase = phrases[randomNumber] 
 
 
 	const easyMode = () => {
@@ -38,7 +37,7 @@
 
 	<HowToPlay />
 
-	<h2>{ randomSentence }</h2>
+	<h2>{ randomPhrase }</h2>
 
 	<div class="playingfield">
 
