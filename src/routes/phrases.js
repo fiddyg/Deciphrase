@@ -1,3 +1,4 @@
-const phrases = [
-    ''
+export const phrases = [
+    'Hello',
+    'Ok'
 ]
