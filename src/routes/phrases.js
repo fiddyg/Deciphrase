@@ -1,4 +1,5 @@
 export const phrases = [
     'Hello',
-    'Ok'
+    'Ok',
+    'Placeholder'
 ]
