@@ -2,11 +2,6 @@
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases} from './phrases.js'
 
-	let numberOfGuesses = 1;
-	const maxGuesses = 5;
-	let guessesRemaining = numberOfGuesses;
-	let currentGuess = [];
-
 	function shuffle(array) {
 		let currentIndex = array.length, randomIndex;
 
@@ -42,6 +37,22 @@
 
 	const hardMode = () => {
 
+	}
+
+	var characterLength = 6
+
+	function createGrid() {
+		const grid = []
+
+		for(let i = 0; i < characterLength, i++ ) {
+			grid.push([])
+			
+			for(let x = 0, x < 1, x++) {
+				grid[i][x] = ''
+			}
+		}
+
+		return grid
 	}
 	
 
