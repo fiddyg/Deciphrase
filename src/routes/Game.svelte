@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases} from './phrases.js'
 	import {writable} from 'svelte/store'
@@ -63,7 +63,7 @@
 
 	<div class="playingfield">
 
-		{each $board as column}
+		{#each $board as column}
 			<div class="row"></div>
 		{/each}
 
