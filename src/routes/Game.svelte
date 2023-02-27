@@ -1,7 +1,8 @@
 <script>
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases} from './phrases.js'
-
+	import {writable} from 'svelte/store'
+ 
 	function shuffle(array) {
 		let currentIndex = array.length, randomIndex;
 
@@ -54,6 +55,8 @@
 
 		return grid
 	}
+
+	const board = writable(createGrid())
 	
 
 
