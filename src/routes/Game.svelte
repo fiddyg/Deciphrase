@@ -7,6 +7,21 @@
 	let guessesRemaining = numberOfGuesses;
 	let currentGuess = [];
 
+	function shuffle(array) {
+		let currentIndex = array.length, randomIndex;
+
+		while (currentIndex != 0) {
+			randomIndex = Math.floor(Math.random() * currentIndex)
+			currentIndex--
+
+			[array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
+		}
+
+		return array
+	}
+
+	shuffle(phrases)
+
 	let block = [
 		{ place: '1' },
 		{ place: '2' },
@@ -51,7 +66,7 @@
 
 	</div>
 
-	<p></p>
+	<p>{phrases}</p>
 	
 </main>
 
