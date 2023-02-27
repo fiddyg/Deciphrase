@@ -18,13 +18,6 @@
 
 	shuffle(phrases)
 
-	let block = [
-		{ place: '1' },
-		{ place: '2' },
-		{ place: '3' },
-		{ place: '4' } 
-	];
-
 	let length = phrases.length;
 
 	let randomNumber = Math.floor(Math.random() * length)
@@ -40,15 +33,15 @@
 
 	}
 
-	var characterLength = 6
+	let characterLength = 6
 
 	function createGrid() {
 		const grid = []
 
-		for(let i = 0; i < characterLength, i++ ) {
+		for(let i = 0; i < 1, i++ ) {
 			grid.push([])
 			
-			for(let x = 0, x < 1, x++) {
+			for(let x = 0, x < characterLength, x++) {
 				grid[i][x] = ''
 			}
 		}
@@ -70,12 +63,8 @@
 
 	<div class="playingfield">
 
-		{#each block as { place }}
-			
-				<span class="block">
-					
-				</span>	
-			
+		{each $board as column}
+			<div class="row"></div>
 		{/each}
 
 	</div>
