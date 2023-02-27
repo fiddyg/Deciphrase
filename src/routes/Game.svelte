@@ -38,7 +38,7 @@
 	function createGrid() {
 		const grid = []
 
-		for(let i = 0; i < 1, i++ ) {
+		for(let i = 0; i < 1, i++) {
 			grid.push([])
 			
 			for(let x = 0, x < characterLength, x++) {
