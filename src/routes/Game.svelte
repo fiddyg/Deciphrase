@@ -1,9 +1,8 @@
 <script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases} from './phrases.js'
-	import {writable} from 'svelte/store'
  
-	function shuffle(array) {
+	function shuffle(array:any) {
 		let currentIndex = array.length, randomIndex;
 
 		while (currentIndex != 0) {
@@ -33,25 +32,6 @@
 
 	}
 
-	let characterLength = 6
-
-	function createGrid() {
-		const grid = []
-
-		for(let i = 0; i < 1, i++) {
-			grid.push([])
-			
-			for(let x = 0, x < characterLength, x++) {
-				grid[i][x] = ''
-			}
-		}
-
-		return grid
-	}
-
-	const board = writable(createGrid())
-	
-
 
 </script>
 
@@ -63,9 +43,7 @@
 
 	<div class="playingfield">
 
-		{#each $board as column}
-			<div class="row"></div>
-		{/each}
+		
 
 	</div>
 
