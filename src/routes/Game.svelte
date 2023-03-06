@@ -47,7 +47,7 @@
 
 	</div>
 
-	<p>{phrases.join("")}</p>
+	<p>{phrases.join(" ")}</p>
 	
 </main>
 
