@@ -44,10 +44,10 @@
 	<div class="playingfield">
 
 		
+		<p>{phrases.join(" ")}</p>
 
 	</div>
 
-	<p>{phrases.join(" ")}</p>
 	
 </main>
 
@@ -59,7 +59,7 @@
 	.playingfield {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		height: 100vh;
 	}
 	
 	.block {
