@@ -2,7 +2,7 @@
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases} from './phrases.js'
  
-	function shuffle(array:any) {
+	function shuffle(array) {
 		let currentIndex = array.length, randomIndex;
 
 		while (currentIndex != 0) {
