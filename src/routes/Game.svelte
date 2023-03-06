@@ -39,15 +39,15 @@
 
 	<HowToPlay />
 
-	<h2>{ randomPhrase }</h2>
 
 	<div class="playingfield">
+		<h2>{ randomPhrase }</h2>
 
 		
-		<p>{phrases.join(" ")}</p>
 
 	</div>
 
+		<p>{phrases.join(" ")}</p>
 	
 </main>
 
@@ -59,7 +59,8 @@
 	.playingfield {
 		display: flex;
 		align-items: center;
-		height: 100vh;
+		justify-content: center;
+		height: 50vh;
 	}
 	
 	.block {

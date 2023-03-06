@@ -73,7 +73,7 @@
     transform: translate(-50%, -50%);
     padding: 1em;
     border-radius: 0.2em;
-    background: url(https://img.rawpixel.com/private/static/images/website/2022-05/px650847-image-kwvvah0o.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c0330b10186d1c1401512f3165107693);
+    background: rgba(255, 255, 255, 1);
     border: 5px solid black;
     text-align: left;
   }
