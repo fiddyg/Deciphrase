@@ -12,13 +12,6 @@
       return;
     }
 
-    const alphabet = ['a', 'b', 'c']
-
-    if (e.key === alphabet) {
-      close()
-      return
-    }
-
     if (e.key === "Tab") {
       // trap focus
       const nodes = modal.querySelectorAll("*");

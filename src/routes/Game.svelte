@@ -23,6 +23,11 @@
 
 	let randomPhrase = phrases[randomNumber] 
 
+	const rows = [
+		{letter: 1},
+		{letter: 2}
+	]
+
 
 	const easyMode = () => {
 		
@@ -39,11 +44,13 @@
 
 	<HowToPlay />
 
+	<h2>{ randomPhrase }</h2>
 
 	<div class="playingfield">
-		<h2>{ randomPhrase }</h2>
 
-		
+		{#each rows as row}
+			<div class="block"></div>
+		{/each}
 
 	</div>
 
@@ -60,7 +67,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 50vh;
+		height: 25vh;
 	}
 	
 	.block {
