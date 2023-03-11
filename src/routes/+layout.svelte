@@ -47,20 +47,11 @@
 		text-align: center;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
-
 	h3 {
 		display: inline;
 		color: black;
 	}
 
-	span {
-		display: inline;
-		margin-left: 1em;
-		margin-right: 1em;
-	}
 
 	@media (min-width: 480px) {
 		footer {
