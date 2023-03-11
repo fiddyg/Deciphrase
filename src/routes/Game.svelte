@@ -25,7 +25,8 @@
 
 	const rows = [
 		{letter: 1},
-		{letter: 2}
+		{letter: 2},
+		{letter: 3}
 	]
 
 
