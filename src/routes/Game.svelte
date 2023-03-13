@@ -1,7 +1,6 @@
 <script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases} from './phrases.js'
- 
 	
 
 	let length = phrases.length;
@@ -15,16 +14,6 @@
 		{letter: 2},
 		{letter: 3}
 	]
-
-
-	const easyMode = () => {
-		
-	}
-
-	const hardMode = () => {
-
-	}
-
 
 </script>
 
@@ -42,7 +31,6 @@
 
 	</div>
 
-		<p>{phrases.join("")}</p>
 	
 </main>
 

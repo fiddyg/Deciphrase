@@ -12,33 +12,32 @@ function shuffle(array) {
 }
 
 
-export const phrases = [
+
+const word1letters = [
     'h',
     'e',
     'l',
     'l',
     'o'
 ]
+const word1 = shuffle(word1letters).join('')
 
-function phrase1() {
-    const word1letters = [
-        'h',
-        'e',
-        'l',
-        'l',
-        'o'
-    ]
+const word2letters = [
+    'w',
+    'o',
+    'r',
+    'l',
+    'd'
+]
+const word2 = shuffle(word2letters).join('')
 
-    const word1 = shuffle(word1letters)
+export const phrase1 = [word1, word2]
 
-    const word2letters = [
-        'w',
-        'o',
-        'r',
-        'l',
-        'd'
-    ]
 
-    const word2 = shuffle(word2letters)
-    
-}
+
+
+export const phrases = [
+    phrase1.join(' ')
+]
+
+
