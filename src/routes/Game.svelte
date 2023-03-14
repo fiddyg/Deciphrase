@@ -1,6 +1,6 @@
 <script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
-	import {phrases, word1length, word2length} from './phrases.js'
+	import {phrases} from './phrases.js'
 	
 
 	let length = phrases.length;
@@ -30,8 +30,6 @@
 		{/each}
 
 	</div>
-
-	<p>{word1length + word2length}</p>
 
 	
 </main>

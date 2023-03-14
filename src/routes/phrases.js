@@ -23,7 +23,7 @@ const word1letters = [
 
 const word1 = shuffle(word1letters).join('')
 
-export const word1length = word1letters.length
+const word1length = word1letters.length
 
 const word2letters = [
     'w',
@@ -35,7 +35,9 @@ const word2letters = [
 
 const word2 = shuffle(word2letters).join('')
 
-export const word2length = word2letters.length
+const word2length = word2letters.length
+
+export const phrase1length = word1length + word2length
 
 export const phrase1 = [word1, word2]
 
