@@ -20,7 +20,10 @@ const word1letters = [
     'l',
     'o'
 ]
+
 const word1 = shuffle(word1letters).join('')
+
+export const word1length = word1letters.length
 
 const word2letters = [
     'w',
@@ -29,7 +32,10 @@ const word2letters = [
     'l',
     'd'
 ]
+
 const word2 = shuffle(word2letters).join('')
+
+export const word2length = word2letters.length
 
 export const phrase1 = [word1, word2]
 

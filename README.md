@@ -1,1 +1,1 @@
-Introducing Deciphrase, a sentence unscrambling game. 
+Introducing Deciphrase, a sentence unscrambling game.
