@@ -45,7 +45,7 @@ export const phrase1length = word1length + word2length
 
 export const phrase1 = [word1, word2]
 
-const correctPhrase1 = 'hello World'
+const correctPhrase1 = 'hello world'
 
 
 
