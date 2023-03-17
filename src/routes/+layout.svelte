@@ -1,12 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-	import { page } from '$app/stores';
 </script>
-
-<svelte:head>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</svelte:head>
 
 <div class="app">
 	<Header />
@@ -16,7 +11,7 @@
 	</main>
 
 	<footer>
-		<h3>&copy 2023 SJRT</h3>
+		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 	</footer>
 </div>
 
@@ -24,6 +19,7 @@
 	.app {
 		display: flex;
 		flex-direction: column;
+		min-height: 100vh;
 	}
 
 	main {
@@ -39,19 +35,15 @@
 
 	footer {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		color: white;
-		font-size: 1rem;
-		margin: 1em;
-		text-align: center;
+		padding: 12px;
 	}
 
-	h3 {
-		display: inline;
-		color: black;
+	footer a {
+		font-weight: bold;
 	}
-
 
 	@media (min-width: 480px) {
 		footer {
