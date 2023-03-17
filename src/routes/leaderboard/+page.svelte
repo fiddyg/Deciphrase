@@ -7,6 +7,11 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Leaderboard</title>
+	
+</svelte:head>
+
 <main>
 
 <ul>

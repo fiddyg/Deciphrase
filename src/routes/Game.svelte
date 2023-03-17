@@ -1,6 +1,7 @@
 <script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases, correctPhrase1} from './phrases.js'
+	import Swal from 'sweetalert2'
 	
 
 	let length = phrases.length;
@@ -19,11 +20,28 @@
 	
 	function click() {
 		if (input.value == correctPhrase1) 
-			alert('Correct!')
+			Swal.fire({
+				title: 'Correct!',
+				text: 'You guessed correctly!',
+				icon: 'success',
+				confirmButtonText: 'Nice!',
+				confirmButtonColor: 'black'
+			})
 		else if (input.value === '')
-			alert('Type something you funny!')
+			Swal.fire({
+				title: 'Type Something You Funny',
+				icon: 'warning',
+				confirmButtonText: 'Go type something',
+				confirmButtonColor: 'black'
+			})
 		else
-			alert(`Wrong! The correct phrase is ${correctPhrase1}`)
+			Swal.fire({
+				title: 'Wrong!',
+				text: `The correct answer is ${correctPhrase1.toUpperCase()}. You guessed ${input.value.toUpperCase()}`,
+				icon: 'error',
+				confirmButtonText: 'Try Again',
+				confirmButtonColor: 'black'
+			})
 	}
 
 </script>
@@ -34,15 +52,6 @@
 	<HowToPlay />
 
 	<h2>{ randomPhrase }</h2>
-
-	<div class="playingfield">
-
-		{#each rows as row}
-			<div class="block"></div>
-		{/each}
-
-		
-	</div>
 	
 	<form>
 		<input bind:this={input} type="text" placeholder="Enter Your Guess">
@@ -76,10 +85,15 @@
 		border-radius: 50%;
 	}
 
+	h2 {
+		font-size: 5rem;
+	}
+
 	form {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin: 2rem;
 	}
 
 	input {
@@ -96,5 +110,8 @@
 		color: white;
 		border-radius: 0%;
 		margin: 1rem;
+		height: 5rem;
+		width: 7rem;
+		font-size: 2rem;
 	}
 </style>

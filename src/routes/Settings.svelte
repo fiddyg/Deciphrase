@@ -42,6 +42,7 @@
 
   h2 {
     text-align: center;
+    margin: 2rem;
   }
 
   .content {
@@ -53,7 +54,7 @@
   .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
-    'wght' 400,
+    'wght' 900,
     'GRAD' 0,
     'opsz' 48
   }
@@ -61,7 +62,7 @@
   .material-symbols-outlined:hover {
     font-variation-settings:
     'FILL' 1,
-    'wght' 400,
+    'wght' 900,
     'GRAD' 0,
     'opsz' 48
   }
