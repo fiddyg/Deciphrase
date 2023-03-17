@@ -25,6 +25,7 @@ const word1 = shuffle(word1letters).join('')
 
 const word1length = word1letters.length
 
+
 const word2letters = [
     'w',
     'o',
@@ -41,6 +42,7 @@ export const phrase1length = word1length + word2length
 
 export const phrase1 = [word1, word2]
 
+export const correctPhrase1 = 'hello world'
 
 
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
-	import {phrases} from './phrases.js'
+	import {phrases, correctPhrase1} from './phrases.js'
 	
 
 	let length = phrases.length;
@@ -15,9 +15,21 @@
 		{letter: 3}
 	]
 
+	let input
+	
+	function click() {
+		if (input.value == correctPhrase1) 
+			alert('Correct!')
+		else if (input.value === '')
+			alert('Type something you funny!')
+		else
+			alert(`Wrong! The correct phrase is ${correctPhrase1}`)
+	}
+
 </script>
 
 <main>
+
 
 	<HowToPlay />
 
@@ -29,8 +41,14 @@
 			<div class="block"></div>
 		{/each}
 
+		
 	</div>
+	
+	<form>
+		<input bind:this={input} type="text" placeholder="Enter Your Guess">
 
+		<button class="btnForm" on:click={click}>Submit</button>
+	</form>
 	
 </main>
 
@@ -56,5 +74,27 @@
 		margin: .5rem;
 		font-size: 1rem;
 		border-radius: 50%;
+	}
+
+	form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	input {
+		width: 20rem;
+		height: 5rem;
+		font-size: 2rem;
+		background-color: transparent;
+		color: black;
+		border: 5px solid black;
+	}
+
+	.btnForm {
+		background-color: black;
+		color: white;
+		border-radius: 0%;
+		margin: 1rem;
 	}
 </style>
