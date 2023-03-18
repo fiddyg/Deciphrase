@@ -17,7 +17,7 @@
 		{letter: 3}
 	]
 
-	export let guessesList = []
+	export const guessesList = []
 
 	let maxGuesses = 10
 
@@ -67,6 +67,8 @@
 		
 		else 
 			console.log('somethings messed up')
+
+		
 	}
 
 </script>
@@ -97,25 +99,6 @@
 <style>
 	main {
 		text-align: center;
-	}
-
-	.playingfield {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 25vh;
-	}
-	
-	.block {
-		border: 2px solid black;
-		width: 2rem;
-		height: 2rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: .5rem;
-		font-size: 1rem;
-		border-radius: 50%;
 	}
 
 	h2 {
