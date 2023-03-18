@@ -1,6 +1,5 @@
 <script>
 	import Header from './Header.svelte';
-	import '../routes/';
 </script>
 
 <div class="app">
