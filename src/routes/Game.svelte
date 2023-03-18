@@ -34,7 +34,9 @@
 				text: 'You guessed correctly!',
 				icon: 'success',
 				confirmButtonText: 'Nice!',
-				confirmButtonColor: 'black'
+				confirmButtonColor: 'black',
+			}) .then((result) => {
+				if (result.isConfirmed) window.location.reload()
 			})
 		else if (input.value === '')
 			Swal.fire({
@@ -59,6 +61,8 @@
 				icon: 'error',
 				confirmButtonText: 'Replay?',
 				confirmButtonColor: 'black'
+			}) .then((result) => {
+				if (result.isConfirmed) window.location.reload()
 			})
 	}
 
