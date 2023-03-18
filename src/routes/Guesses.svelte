@@ -1,6 +1,7 @@
 <script>
     import Modal from "./Modal.svelte";
     let showModal = false;
+    import guessesList from './Game.svelte'
 </script>
 
 <svelte:head>
@@ -23,69 +24,55 @@
 {/if}
 
 <style>
-button {
-    border-radius: 0;
-    border: none;
-    padding: none;
-    font-size: 1em;
-    background-color: transparent;
-    cursor: pointer;
-    padding: .5rem;
-}
 
-button:focus,
-button:focus-visible {
-    outline: none;
-}
+    button {
+        border-radius: 0;
+        border: none;
+        padding: none;
+        font-size: 1em;
+        background-color: transparent;
+        cursor: pointer;
+        padding: .2rem;
+    }
 
-h2 {
-    text-align: center;
-    margin: 2rem;
-}
+    button:hover {
+        color: black;
+        background-color: white;
+        border-radius: .7rem;
+        text-decoration: none;
+    }
 
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    button:focus,
+    button:focus-visible {
+        outline: none;
+    }
 
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 900,
-    'GRAD' 0,
-    'opsz' 48
-}
+    h2 {
+        text-align: center;
+        margin: 2rem;
+    }
 
-.material-symbols-outlined:hover {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 900,
-    'GRAD' 0,
-    'opsz' 48
-}
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-button {
-    border-radius: 0;
-    border: none;
-    padding: none;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: transparent;
-    cursor: pointer;
-    padding: .5rem;
-}
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 900,
+        'GRAD' 0,
+        'opsz' 48
+    }
 
-button:hover {
-    color: white;
-    background-color: black;
-    border-radius: .7rem;
-    text-decoration: none;
-}
+    .material-symbols-outlined:hover {
+        color: black;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 900,
+        'GRAD' 0,
+        'opsz' 48
+    }
 
-button:focus,
-button:focus-visible {
-    outline: none;
-}
 </style>

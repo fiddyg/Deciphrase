@@ -36,7 +36,7 @@
 	}
 
 	.person {
-		border: 2px solid black;
+		border: 2px solid white;
 		width: 100%;
 		margin: 1rem 0;
 	}
@@ -54,10 +54,11 @@
 
 	h4, p {
 		display: inline;
+		font-size: 2rem;
 	}
 
 	.name {
-		margin: 1rem;
+		margin: 2rem;
 	}
 
 

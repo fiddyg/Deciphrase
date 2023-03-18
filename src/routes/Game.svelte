@@ -17,7 +17,7 @@
 		{letter: 3}
 	]
 
-	let guessesList = []
+	export let guessesList = []
 
 	let maxGuesses = 10
 
