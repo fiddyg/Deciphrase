@@ -27,6 +27,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin: 1rem;
+		color: white;
 	}
 
 	
@@ -35,7 +36,7 @@
 	}
 	
 	.material-symbols-outlined {
-		color: black;
+		color: white;
 		font-variation-settings:
 		'FILL' 0,
 		'wght' 900,

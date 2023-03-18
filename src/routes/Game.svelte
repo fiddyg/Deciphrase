@@ -109,10 +109,6 @@
 		border-radius: 50%;
 	}
 
-	main {
-		background-color: rgba(0, 0, 0, .3);
-	}
-
 	h2 {
 		font-size: 5rem;
 		color: white;
@@ -147,6 +143,11 @@
 		height: 5rem;
 		width: 10rem;
 		font-size: 2rem;
+		border: 5px solid white;
+	}
+
+	.btnForm:hover {
+		opacity: .8;
 	}
 
 	.below {

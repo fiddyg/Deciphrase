@@ -52,6 +52,7 @@
   }
 
   .material-symbols-outlined {
+    color: white;
     font-variation-settings:
     'FILL' 0,
     'wght' 900,

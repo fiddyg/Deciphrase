@@ -66,7 +66,7 @@
     transform: translate(-50%, -50%);
     padding: 1em;
     border-radius: 0.2em;
-    background: rgba(255, 255, 255, 1);
+    background-color: black;
     border: 5px solid black;
     text-align: left;
   }
@@ -78,7 +78,7 @@
     margin: 1em;
     font-size: 1em;
     font-weight: 500;
-    color: black;
+    color: white;
     font-family: inherit;
     cursor: pointer;
     text-align: center;
@@ -86,8 +86,8 @@
   }
 
   button:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color:white;
     border-radius: .7rem;
     text-decoration: none;
   }

@@ -21,15 +21,15 @@
     border: none;
     padding: none;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 900;
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
     padding: .5rem;
   }
   button:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     border-radius: .7rem;
     text-decoration: none;
   }
