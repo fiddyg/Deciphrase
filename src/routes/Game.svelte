@@ -2,6 +2,7 @@
 	import HowToPlay from './HowToPlay.svelte'
 	import {phrases, correctPhrase1} from './phrases.js'
 	import Swal from 'sweetalert2'
+	import Guesses from './Guesses.svelte';
 	
 
 	let length = phrases.length;
@@ -15,6 +16,14 @@
 		{letter: 2},
 		{letter: 3}
 	]
+
+	let guessesList = []
+
+	let maxGuesses = 10
+
+	let score = 100
+
+	let newScore = score - 10
 
 	let input
 	
@@ -34,12 +43,21 @@
 				confirmButtonText: 'Go type something',
 				confirmButtonColor: 'black'
 			})
-		else
+		else if (input.value !== correctPhrase1)
+			Swal.fire({
+				title: 'Wrong!',
+				text: `Try again`,
+				icon: 'error',
+				confirmButtonText: 'Try Again',
+				confirmButtonColor: 'black'
+			})
+			
+		else if (maxGuesses = 0)
 			Swal.fire({
 				title: 'Wrong!',
 				text: `The correct answer is ${correctPhrase1.toUpperCase()}. You guessed ${input.value.toUpperCase()}`,
 				icon: 'error',
-				confirmButtonText: 'Try Again',
+				confirmButtonText: 'Replay?',
 				confirmButtonColor: 'black'
 			})
 	}
@@ -59,6 +77,12 @@
 		<button class="btnForm" on:click={click}>Submit</button>
 	</form>
 	
+	<div class="below">
+		<Guesses />
+
+		<h3>Score: {score}</h3>
+	</div>
+
 </main>
 
 <style>
@@ -85,8 +109,13 @@
 		border-radius: 50%;
 	}
 
+	main {
+		background-color: rgba(0, 0, 0, .3);
+	}
+
 	h2 {
 		font-size: 5rem;
+		color: white;
 	}
 
 	form {
@@ -101,17 +130,28 @@
 		height: 5rem;
 		font-size: 2rem;
 		background-color: transparent;
-		color: black;
-		border: 5px solid black;
+		color: white;
+		border: 5px solid white;
+	}
+
+	input::placeholder {
+		color: white;
+		text-align: center;
 	}
 
 	.btnForm {
-		background-color: black;
-		color: white;
+		background-color: white;
+		color: black;
 		border-radius: 0%;
 		margin: 1rem;
 		height: 5rem;
-		width: 7rem;
+		width: 10rem;
 		font-size: 2rem;
+	}
+
+	.below {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 </style>
