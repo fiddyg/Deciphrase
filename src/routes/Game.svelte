@@ -80,6 +80,8 @@
 	<div class="below">
 		<Guesses />
 
+		<h3>Guesses left: {maxGuesses}</h3>
+
 		<h3>Score: {score}</h3>
 	</div>
 
