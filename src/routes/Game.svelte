@@ -64,6 +64,9 @@
 			}) .then((result) => {
 				if (result.isConfirmed) window.location.reload()
 			})
+		
+		else 
+			console.log('somethings messed up')
 	}
 
 </script>
