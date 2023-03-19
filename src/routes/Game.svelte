@@ -121,6 +121,7 @@
 		background-color: transparent;
 		color: white;
 		border: 5px solid white;
+		padding: .5rem;
 	}
 
 	input::placeholder {
