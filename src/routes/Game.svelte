@@ -34,7 +34,7 @@
 			})
 		else if (input.value === '')
 			Swal.fire({
-				title: 'Type Something You Funny',
+				title: 'Type Something, You Funny',
 				icon: 'warning',
 				confirmButtonText: 'Go type something',
 				confirmButtonColor: 'black'
