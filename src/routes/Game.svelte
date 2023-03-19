@@ -17,15 +17,13 @@
 
 	let score = 100
 
-	let newScore = score - 20
-
 	let input
 	
 	function click() {
 		if (input.value === correctPhrase1) 
 			Swal.fire({
 				title: 'Correct!',
-				text: 'You guessed correctly!',
+				text: `You guessed correctly! It took you ${6 - maxGuesses} tries. Your score is ${score}`,
 				icon: 'success',
 				confirmButtonText: 'Nice!',
 				confirmButtonColor: 'black',
@@ -50,7 +48,7 @@
 			
 			maxGuesses--
 
-			score - 20
+			score = score - 20
 
 			if (maxGuesses === 0)
 				Swal.fire({
@@ -65,16 +63,13 @@
 			
 		}
 			
-		
-		else 
-			console.log('somethings messed up')
-
-		
 	}
 
 </script>
+	
 
 <main>
+
 
 
 	<HowToPlay />
