@@ -11,24 +11,18 @@
 
 	let randomPhrase = phrases[randomNumber] 
 
-	const rows = [
-		{letter: 1},
-		{letter: 2},
-		{letter: 3}
-	]
-
 	export const guessesList = []
 
-	let maxGuesses = 10
+	let maxGuesses = 5
 
 	let score = 100
 
-	let newScore = score - 10
+	let newScore = score - 20
 
 	let input
 	
 	function click() {
-		if (input.value == correctPhrase1) 
+		if (input.value === correctPhrase1) 
 			Swal.fire({
 				title: 'Correct!',
 				text: 'You guessed correctly!',
@@ -45,7 +39,7 @@
 				confirmButtonText: 'Go type something',
 				confirmButtonColor: 'black'
 			})
-		else if (input.value !== correctPhrase1)
+		else if (input.value !== correctPhrase1) {
 			Swal.fire({
 				title: 'Wrong!',
 				text: `Try again`,
@@ -54,16 +48,23 @@
 				confirmButtonColor: 'black'
 			})
 			
-		else if (maxGuesses = 0)
-			Swal.fire({
-				title: 'Wrong!',
-				text: `The correct answer is ${correctPhrase1.toUpperCase()}. You guessed ${input.value.toUpperCase()}`,
-				icon: 'error',
-				confirmButtonText: 'Replay?',
-				confirmButtonColor: 'black'
-			}) .then((result) => {
-				if (result.isConfirmed) window.location.reload()
-			})
+			maxGuesses--
+
+			score - 20
+
+			if (maxGuesses === 0)
+				Swal.fire({
+					title: 'Wrong!',
+					text: `The correct answer is ${correctPhrase1.toUpperCase()}. You guessed ${input.value.toUpperCase()}`,
+					icon: 'error',
+					confirmButtonText: 'Replay?',
+					confirmButtonColor: 'black'
+				}) .then((result) => {
+					if (result.isConfirmed) window.location.reload()
+				})
+			
+		}
+			
 		
 		else 
 			console.log('somethings messed up')
