@@ -11,12 +11,10 @@
 
 	let randomPhrase = phrases[randomNumber] 
 
-	export const guessesList = []
-
 	let maxGuesses = 5
-
+	
 	let score = 100
-
+	
 	let input
 	
 	function click() {
