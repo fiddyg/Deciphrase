@@ -1,4 +1,4 @@
-function shuffle(array) {
+export function shuffle(array) {
     let currentIndex = array.length, randomIndex;
 
     while (currentIndex != 0) {
@@ -13,7 +13,7 @@ function shuffle(array) {
 
 
 
-const word1letters = [
+const phrase1Word1Letters = [
     'h',
     'e',
     'l',
@@ -21,13 +21,9 @@ const word1letters = [
     'o'
 ]
 
-const word1 = shuffle(word1letters).join('')
+const phrase1Word1 = shuffle(phrase1Word1Letters).join('')
 
-const word1length = word1letters.length
-
-const correctWord1 = 'hello'
-
-const word2letters = [
+const phrase1Word2Letters = [
     'w',
     'o',
     'r',
@@ -35,22 +31,73 @@ const word2letters = [
     'd'
 ]
 
-const word2 = shuffle(word2letters).join('')
+const phrase1Word2 = shuffle(phrase1Word2Letters).join('')
 
-const word2length = word2letters.length
-
-const correctWord2 = 'world'
-
-export const phrase1length = word1length + word2length
-
-export const phrase1 = [word1, word2]
+export const phrase1 = [phrase1Word1, phrase1Word2]
 
 export const correctPhrase1 = 'hello world'
 
 
+const phrase2Word1Letters = [
+    'g',
+    'o',
+    'o',
+    'd'
+]
+
+const phrase2Word1 = shuffle(phrase2Word1Letters).join('')
+
+const phrase2Word2Letters = [
+    'm',
+    'o',
+    'r',
+    'n',
+    'i',
+    'n',
+    'g'
+]
+
+
+const phrase2Word2 = shuffle(phrase2Word2Letters).join('')
+
+export const phrase2 = [phrase2Word1, phrase2Word2]
+
+export const correctPhrase2 = 'good morning'
+
+
+const phrase3Word1Letters = [
+    'n',
+    'o'
+]
+
+const phrase3Word1 = shuffle(phrase3Word1Letters).join('')
+
+const phrase3Word2Letters = [
+    'p',
+    'r',
+    'o',
+    'b',
+    'l',
+    'e',
+    'm'
+]
+
+const phrase3Word2 = shuffle(phrase3Word2Letters).join('')
+
+const phrase3 = [phrase3Word1, phrase3Word2]
+
+const correctPhrase3 = 'no problem'
+
+export const correctPhrases = [
+    correctPhrase1, 
+    correctPhrase2, 
+    correctPhrase3
+]
 
 export const phrases = [
-    phrase1.join(' ')
+    phrase1.join(' '),
+    phrase2.join(' '),
+    phrase3.join(' ')
 ]
 
 

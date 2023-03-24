@@ -1,6 +1,6 @@
 <script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
-	import {phrases, correctPhrase1} from './phrases.js'
+	import {phrases, correctPhrases, correctPhrase1} from './phrases.js'
 	import Swal from 'sweetalert2'
 	import Guesses from './Guesses.svelte';
 	
@@ -11,6 +11,8 @@
 
 	let randomPhrase = phrases[randomNumber] 
 
+	let correctPhrase = correctPhrases[randomNumber]
+
 	let maxGuesses = 5
 	
 	let score = 100
@@ -18,7 +20,7 @@
 	let input
 	
 	function click() {
-		if (input.value === correctPhrase1) 
+		if (input.value === correctPhrase) 
 			Swal.fire({
 				title: 'Correct!',
 				text: `You guessed correctly! It took you ${6 - maxGuesses} tries. Your score is ${score}`,
@@ -35,7 +37,7 @@
 				confirmButtonText: 'Go type something',
 				confirmButtonColor: 'black'
 			})
-		else if (input.value !== correctPhrase1) {
+		else if (input.value !== correctPhrase) {
 			Swal.fire({
 				title: 'Wrong!',
 				text: `Try again`,
@@ -51,7 +53,7 @@
 			if (maxGuesses === 0)
 				Swal.fire({
 					title: 'Wrong!',
-					text: `The correct answer is ${correctPhrase1.toUpperCase()}. You guessed ${input.value.toUpperCase()}`,
+					text: `The correct answer is ${correctPhrase.toUpperCase()}. You guessed ${input.value.toUpperCase()}`,
 					icon: 'error',
 					confirmButtonText: 'Replay?',
 					confirmButtonColor: 'black'
