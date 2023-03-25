@@ -1,5 +1,6 @@
 <script lang="ts">
 	import HowToPlay from './HowToPlay.svelte'
+	import Login from './SignUp.svelte'
 	import {phrases, correctPhrases, correctPhrase1} from './phrases.js'
 	import Swal from 'sweetalert2'
 	import Guesses from './Guesses.svelte';
@@ -69,8 +70,6 @@
 	
 
 <main>
-
-
 
 	<HowToPlay />
 
