@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"pocketbase": "^0.13.0",
 		"sweetalert2": "^11.7.3"
 	}
 }
