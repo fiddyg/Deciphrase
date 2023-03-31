@@ -20,7 +20,7 @@
 	
 	let input
 	
-	function click() {
+	const click = () => {
 		if (input.value === correctPhrase) 
 			Swal.fire({
 				title: 'Correct!',
