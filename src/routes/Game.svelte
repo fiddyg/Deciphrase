@@ -116,6 +116,7 @@
 		color: white;
 		border: 5px solid white;
 		padding: .5rem;
+		text-align: center;
 	}
 
 	input::placeholder {
