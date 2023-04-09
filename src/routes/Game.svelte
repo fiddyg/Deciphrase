@@ -3,7 +3,6 @@
 	import {phrases, correctPhrases, correctPhrase1} from './phrases.js'
 	import Swal from 'sweetalert2';
 	import Guesses from './Guesses.svelte';
-	
 
 	let length = phrases.length;
 
