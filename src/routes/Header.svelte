@@ -21,7 +21,12 @@
 
 		{#if $currentUser}
 				
-			<form method="POST" action="/logout">
+			<form method="POST" action="/logout" use:enhance{() => {
+				pb.authStore.clear()
+				return async ({result}) => {
+					await applyAction(result)
+				}
+			}}> 
 				<button><span class="material-symbols-outlined">logout</span></button>
 			</form>
 		{:else}
