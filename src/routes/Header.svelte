@@ -19,7 +19,7 @@
 			<a href="/leaderboard"><span class="material-symbols-outlined">leaderboard</span></a>
 		</span>
 
-		{#if $currentUser}
+		<!-- {#if $currentUser}
 				
 			<form method="POST" action="/logout" use:enhance{() => {
 				pb.authStore.clear()
@@ -29,11 +29,11 @@
 			}}> 
 				<button><span class="material-symbols-outlined">logout</span></button>
 			</form>
-		{:else}
+		{:else} -->
 			<span aria-current={$page.url.pathname === '/register' ? 'page' : undefined}>
 				<a href="/register"><span class="material-symbols-outlined">login</span></a>
 			</span>
-		{/if}
+		<!-- {/if} -->
 
 		<span><Settings /></span>
 	</nav>

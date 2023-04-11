@@ -80,7 +80,6 @@
 	</form>
 	
 	<div class="below">
-		<Guesses />
 
 		<h3>Guesses left: {maxGuesses}</h3>
 

@@ -5,7 +5,7 @@
 
 <h2>Sign Up</h2>
 
-<form method="POST" use:enhance={() => {
+<form method="POST" on:submit|preventDefault use:enhance={() => {
     return async ({result}) => {
         pb.authStore.loadFromCookie(document.cookie)
         await applyAction(result)

@@ -9,7 +9,7 @@
     return async ({result}) => {
         pb.authStore.loadFromCookie(document.cookie)
         await applyAction(result)
-    }
+    } 
 }}>
 
     <input type="email" placeholder="Email" name="email">
