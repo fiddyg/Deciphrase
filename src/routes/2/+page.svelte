@@ -1,16 +1,16 @@
 <script lang="ts">
-	import HowToPlay from './HowToPlay.svelte'
-	import {phrases, correctPhrases, correctPhrase1} from './phrases.js'
+	import {phrases, correctPhrases, correctPhrase2, phrase2} from '../phrases.js'
 	import Swal from 'sweetalert2';
-	import Guesses from './Guesses.svelte';
+	import { page } from '$app/stores';
+
 
 	let length = phrases.length;
 
 	let randomNumber = Math.floor(Math.random() * length)
 
-	let randomPhrase = phrases[randomNumber] 
+	let randomPhrase = phrase2.join(' ')
 
-	let correctPhrase = correctPhrases[randomNumber]
+	let correctPhrase = correctPhrase2
 
 	let maxGuesses = 5
 	
@@ -69,7 +69,25 @@
 
 <main>
 
-	<HowToPlay />
+	<div class="header">
+		<span class="tooltip">
+			<span aria-current={$page.url.pathname === '/1' ? 'page' : undefined}>
+				<a href="/1"><span class="material-symbols-outlined">arrow_back_ios</span></a>
+			</span>
+
+			<span class="tooltiptext">Go to level 1</span>
+		</span>
+
+		<span class="tooltip">
+			<span aria-current={$page.url.pathname === '/3' ? 'page' : undefined}>
+				<a href="/3"><span class="material-symbols-outlined">arrow_forward_ios</span></a>
+			</span>
+
+			<span class="tooltiptext">Go to level 3</span>
+		</span>
+	</div>
+
+	<h3>Level 2</h3>
 
 	<h2>{ randomPhrase }</h2>
 	
@@ -140,5 +158,33 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.tooltip {
+		position: relative;
+		display: inline-block;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 10rem;
+		background-color: white;
+		color: black;
+		border-radius: 10px;
+		padding: .5rem;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		font-size: 1rem;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
 	}
 </style>

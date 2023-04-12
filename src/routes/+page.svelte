@@ -1,5 +1,5 @@
 <script>
-	import Game from "./Game.svelte"
+	import Choose from "./Choose.svelte";
 </script>
 
 <svelte:head>
@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section>
-	<Game />
+	<Choose />
 </section>
 
 <style>

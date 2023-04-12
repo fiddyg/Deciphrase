@@ -84,9 +84,9 @@ const phrase3Word2Letters = [
 
 const phrase3Word2 = shuffle(phrase3Word2Letters).join('')
 
-const phrase3 = [phrase3Word1, phrase3Word2]
+export const phrase3 = [phrase3Word1, phrase3Word2]
 
-const correctPhrase3 = 'no problem'
+export const correctPhrase3 = 'no problem'
 
 export const correctPhrases = [
     correctPhrase1, 

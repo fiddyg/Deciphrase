@@ -1,11 +1,14 @@
 <script>
 	import Header from './Header.svelte';
+	import HowToPlay from './HowToPlay.svelte';
 </script>
 
 <div class="app">
 	<Header />
 
 	<main>
+		<HowToPlay />
+
 		<slot />
 	</main>
 

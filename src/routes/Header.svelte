@@ -30,8 +30,8 @@
 				<button><span class="material-symbols-outlined">logout</span></button>
 			</form>
 		{:else} -->
-			<span aria-current={$page.url.pathname === '/register' ? 'page' : undefined}>
-				<a href="/register"><span class="material-symbols-outlined">login</span></a>
+			<span aria-current={$page.url.pathname === '/signup' ? 'page' : undefined}>
+				<a href="/signup"><span class="material-symbols-outlined">login</span></a>
 			</span>
 		<!-- {/if} -->
 
