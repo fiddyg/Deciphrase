@@ -9,9 +9,9 @@
   <Modal on:close={() => (showModal = false)}>
     <h2 slot="header">How To Play</h2>
 
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quas asperiores necessitatibus, similique velit ea, facere possimus perferendis a aut voluptatem dolorem quod dicta harum corrupti pariatur rerum, maxime cupiditate.
-    </p>
+    <h3>
+      Deciphrase is a word-unscrambling game. The objective is to decipher the given phrase in the least amount of guesses. You are given 5 guesses, and 100 total points. Once you are done with the level, you can click on the arrows to go to a new level. Simply choose a level, and you're off to the races!
+    </h3>
   </Modal>
 {/if}
 
@@ -36,5 +36,9 @@
   button:focus,
   button:focus-visible {
     outline: none;
+  }
+
+  h3 {
+    margin: 2rem;
   }
 </style>
