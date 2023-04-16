@@ -9,13 +9,13 @@
 </div>
 
 <div>
-    <span aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+    <span aria-current={$page.url.pathname === '/2' ? 'page' : undefined}>
         <a href="/2">Level Two</a>
     </span>
 </div>
 
 <div>
-    <span aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+    <span aria-current={$page.url.pathname === '/3' ? 'page' : undefined}>
         <a href="/3">Level Three</a>
     </span>
 </div>
