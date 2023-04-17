@@ -5,6 +5,10 @@
 	import {applyAction, enhance} from '$app/forms'
 </script>
 
+<svelte:head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</svelte:head>
+
 <header>
 	<div class="corner">
 		<h1>Deciphrase</h1>
@@ -35,7 +39,7 @@
 			</span>
 		<!-- {/if} -->
 
-		<span><Settings /></span>
+		<!-- <span><Settings /></span> -->
 	</nav>
 	
 	
