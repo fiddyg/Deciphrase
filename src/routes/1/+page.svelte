@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {phrases, correctPhrases, correctPhrase1, phrase1} from '../phrases.js'
+	import {phrases, correctPhrases} from './easyPhrases'
 	import Swal from 'sweetalert2';
 	import { page } from '$app/stores';
 
@@ -8,9 +8,9 @@
 
 	let randomNumber = Math.floor(Math.random() * length)
 
-	let randomPhrase = phrase1.join(' ')
+	let randomPhrase = phrases[randomNumber].join(' ')
 
-	let correctPhrase = correctPhrase1
+	let correctPhrase = correctPhrases[randomNumber]
 
 	let maxGuesses = 5
 	
@@ -87,7 +87,7 @@
 		</span>
 	</div>
 
-	<h3>Level 1</h3>
+	<h3>Level 1: Easy</h3>
 
 	<h2>{ randomPhrase }</h2>
 	
