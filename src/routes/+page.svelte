@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Choose from "./Choose.svelte";
 </script>
 

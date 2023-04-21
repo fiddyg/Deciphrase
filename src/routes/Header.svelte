@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import Settings from './Settings.svelte';
-	import {currentUser} from '$lib/pocketbase' 
+	import Settings from './Settings.svelte'; 
 	import {applyAction, enhance} from '$app/forms'
 </script>
 
