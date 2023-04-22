@@ -18,7 +18,7 @@
 	
 	let input
 
-	let mode = ['Medium']
+	let mode2 = ['Medium']
 	
 	const click = () => {
 		if (input.value === correctPhrase) 

@@ -1,4 +1,8 @@
-<script>	
+<script>
+	import mode1 from '../1/+page.svelte'	
+	import mode2 from '../2/+page.svelte'	
+	import mode3 from '../3/+page.svelte'
+	import name from '../RandomName.svelte'	
 
 	let players = [
 		{ name: 'Spencer Gale', points: 25 },
