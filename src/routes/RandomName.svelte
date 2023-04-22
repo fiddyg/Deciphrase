@@ -5,7 +5,7 @@
 
     let name = [randomName, randomNumber].join('_')
 
-    let userScore = [name]
+    export const userScore = ['Easy']
 
     let numbers = [4, 5, 2, 3, 1, 8]
 

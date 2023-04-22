@@ -4,19 +4,19 @@
 
 <div>
     <span aria-current={$page.url.pathname === '/1' ? 'page' : undefined}>
-        <a href="/1">Level One</a>
+        <a href="/1">Easy</a>
     </span>
 </div>
 
 <div>
     <span aria-current={$page.url.pathname === '/2' ? 'page' : undefined}>
-        <a href="/2">Level Two</a>
+        <a href="/2">Medium</a>
     </span>
 </div>
 
 <div>
     <span aria-current={$page.url.pathname === '/3' ? 'page' : undefined}>
-        <a href="/3">Level Three</a>
+        <a href="/3">Hard</a>
     </span>
 </div>
 
@@ -28,7 +28,7 @@
     }
 
     div {
-        width: 20rem;
+        width: 15rem;
         height: 5rem;
         background-color: transparent;
         text-align: center;

@@ -3,6 +3,7 @@
 	import Swal from 'sweetalert2';
 	import { page } from '$app/stores';
 	import name from '../RandomName.svelte';
+	import userScore from '../RandomName.svelte'
 
 
 	let length = phrases.length;
@@ -22,7 +23,7 @@
 	let mode1 = ['Easy']
 	
 	const click = () => {
-		if (input.value === correctPhrase) 
+		if (input.value === correctPhrase) {
 			Swal.fire({
 				title: 'Correct!',
 				text: `You guessed correctly! It took you ${6 - maxGuesses} tries. Your score is ${score}`,
@@ -32,6 +33,11 @@
 			}) .then((result) => {
 				if (result.isConfirmed) window.location.reload()
 			})
+
+			console.log(userScore)
+
+			
+		}
 		else if (input.value === '')
 			Swal.fire({
 				title: 'Type Something, You Funny',
