@@ -2,6 +2,7 @@
 	import {phrases, correctPhrases} from './easyPhrases'
 	import Swal from 'sweetalert2';
 	import { page } from '$app/stores';
+	import name from '../RandomName.svelte';
 
 
 	let length = phrases.length;
@@ -17,6 +18,8 @@
 	let score = 100
 	
 	let input
+	
+	let mode = ['Easy']
 	
 	const click = () => {
 		if (input.value === correctPhrase) 

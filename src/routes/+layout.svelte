@@ -1,6 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import HowToPlay from './HowToPlay.svelte';
+	import RandomName from './RandomName.svelte';
 	
 </script>
 <div class="app">
@@ -8,6 +9,8 @@
 
 	<main>
 		<HowToPlay />
+
+		<RandomName />
 
 		<slot />
 	</main>

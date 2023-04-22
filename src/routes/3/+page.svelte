@@ -12,17 +12,19 @@
 
 	let correctPhrase = correctPhrases[randomNumber]
 
-	let maxGuesses = 5
+	let maxGuesses = 10
 	
-	let score = 100
+	let score = 300 
 	
 	let input
+
+	let mode = ['Hard']
 	
 	const click = () => {
 		if (input.value === correctPhrase) 
 			Swal.fire({
 				title: 'Correct!',
-				text: `You guessed correctly! It took you ${6 - maxGuesses} tries. Your score is ${score}`,
+				text: `You guessed correctly! It took you ${10 - maxGuesses} tries. Your score is ${score}`,
 				icon: 'success',
 				confirmButtonText: 'Nice!',
 				confirmButtonColor: 'black',
@@ -47,7 +49,7 @@
 			
 			maxGuesses--
 
-			score = score - 20
+			score = score - 30
 
 			if (maxGuesses === 0)
 				Swal.fire({

@@ -5,6 +5,11 @@
 		{ name: 'Truman Kington', points: 20 },
 		{ name: 'Jesse Speir', points: 15 }
 	];
+	
+	// let num = players.sort(function(a, b) {
+    //     return b - a 
+    // })
+
 </script>
 
 <svelte:head>

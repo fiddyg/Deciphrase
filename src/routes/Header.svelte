@@ -21,24 +21,9 @@
 		<span aria-current={$page.url.pathname === '/leaderboard' ? 'page' : undefined}>
 			<a href="/leaderboard"><span class="material-symbols-outlined">leaderboard</span></a>
 		</span>
-
-		<!-- {#if $currentUser}
-				
-			<form method="POST" action="/logout" use:enhance{() => {
-				pb.authStore.clear()
-				return async ({result}) => {
-					await applyAction(result)
-				}
-			}}> 
-				<button><span class="material-symbols-outlined">logout</span></button>
-			</form>
-		{:else} -->
 			<span aria-current={$page.url.pathname === '/signup' ? 'page' : undefined}>
 				<a href="/signup"><span class="material-symbols-outlined">login</span></a>
 			</span>
-		<!-- {/if} -->
-
-		<!-- <span><Settings /></span> -->
 	</nav>
 	
 	
