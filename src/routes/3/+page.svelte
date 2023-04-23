@@ -26,7 +26,7 @@
 		if (input.value === correctPhrase) {
 			Swal.fire({
 				title: 'Correct!',
-				text: `You guessed correctly! It took you ${10 - maxGuesses} tries. Your score is ${score}`,
+				text: `You guessed correctly! It took you ${11 - maxGuesses} tries. Your score is ${score}`,
 				icon: 'success',
 				confirmButtonText: 'Nice!',
 				confirmButtonColor: 'black',

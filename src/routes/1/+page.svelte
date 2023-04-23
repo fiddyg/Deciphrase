@@ -22,7 +22,7 @@
 	
 	let input
 
-	let easyScore: any = []
+	let easyScore: any = [] 
 	
 	let mode1 = ['Easy']
 	
