@@ -18,10 +18,12 @@
 	
 	let input
 
+	let mediumScore: any = []
+
 	let mode2 = ['Medium']
 	
 	const click = () => {
-		if (input.value === correctPhrase) 
+		if (input.value === correctPhrase) {
 			Swal.fire({
 				title: 'Correct!',
 				text: `You guessed correctly! It took you ${9 - maxGuesses} tries. Your score is ${score}`,
@@ -31,6 +33,9 @@
 			}) .then((result) => {
 				if (result.isConfirmed) window.location.reload()
 			})
+
+			mediumScore.push(score)
+		}
 		else if (input.value === '')
 			Swal.fire({
 				title: 'Type Something, You Funny',

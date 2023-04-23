@@ -3,7 +3,7 @@
 	import Swal from 'sweetalert2';
 	import { page } from '$app/stores';
 	import name from '../RandomName.svelte';
-	import userScore from '../RandomName.svelte'
+	import userScore from '../leaderboard/+page.svelte'
 
 
 	let length = phrases.length;
@@ -17,8 +17,12 @@
 	let maxGuesses = 5
 	
 	let score = 100
+
+	let user = name
 	
 	let input
+
+	let easyScore: any = []
 	
 	let mode1 = ['Easy']
 	
@@ -34,7 +38,7 @@
 				if (result.isConfirmed) window.location.reload()
 			})
 
-			console.log(userScore)
+			easyScore.push(score)
 
 			
 		}

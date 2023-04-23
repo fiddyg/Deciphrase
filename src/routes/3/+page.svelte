@@ -18,10 +18,12 @@
 	
 	let input
 
+	let hardScore: any = []
+
 	let mode3 = ['Hard']
 	
 	const click = () => {
-		if (input.value === correctPhrase) 
+		if (input.value === correctPhrase) {
 			Swal.fire({
 				title: 'Correct!',
 				text: `You guessed correctly! It took you ${10 - maxGuesses} tries. Your score is ${score}`,
@@ -31,6 +33,9 @@
 			}) .then((result) => {
 				if (result.isConfirmed) window.location.reload()
 			})
+
+			hardScore.push(score)
+		}
 		else if (input.value === '')
 			Swal.fire({
 				title: 'Type Something, You Funny',

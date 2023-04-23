@@ -1,11 +1,10 @@
 <script>
+    
     let randomName = ['Guest']
 
     let randomNumber = Math.floor(Math.random() * 1000)
 
-    let name = [randomName, randomNumber].join('_')
-
-    export const userScore = ['Easy']
+    export const name = 'Guest'
 
     let numbers = [4, 5, 2, 3, 1, 8]
 
