@@ -10,7 +10,10 @@
     <h2 slot="header">How To Play</h2>
 
     <h3>
-      Deciphrase is a word-unscrambling game. The objective is to decipher the given phrase in the least amount of guesses. You are given 5, 8, or 10 guesses, and 100, 200, or 300 total points, depending on which level you choose. Once you are done with the level, you can click on the arrows to go to a new level. Simply choose a level, and you're off to the races!
+      Deciphrase is a word-unscrambling game. The objective is to decipher the given phrase in the least amount of guesses. You are given 5 guesses, and 100, 200, or 300 total points, depending on which level you choose. Once you are done with the level, you can click on the arrows to go to a new level. Simply choose a level, and you're off to the races!
+    </h3>
+    <h3>
+      There is a SoundCloud embed in the footer with the music. It automatically starts playing when the tab is cached. If you want it to stop playing, press the purple button.
     </h3>
   </Modal>
 {/if}

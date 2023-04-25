@@ -31,6 +31,8 @@
 	let mediumScore: any = []
 
 	let mode2 = ['Medium']
+
+    export let user: any = []
 	
 	const click = () => {
 		if (input.value === correctPhrase) {
@@ -44,7 +46,9 @@
 				if (result.isConfirmed) window.location.reload()
 			})
 
-			mediumScore.push(score)
+			user.push(score)
+            
+            console.log(user)
 		}
 		else if (input.value === '')
 			Swal.fire({

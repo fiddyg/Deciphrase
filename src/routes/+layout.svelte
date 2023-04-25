@@ -1,8 +1,12 @@
 <script>
 	import Header from './Header.svelte';
 	import HowToPlay from './HowToPlay.svelte';
-	import RandomName from './RandomName.svelte';
-	
+	import user from './Game.svelte'
+
+	let array = [1, 2]
+	array.forEach(element => {
+		console.log(element)
+	});
 </script>
 <div class="app">
 	<Header />
@@ -10,7 +14,7 @@
 	<main>
 		<HowToPlay />
 
-		<!-- <RandomName /> -->
+		<h2>Playing as: Guest</h2>
 
 		<slot />
 	</main>
@@ -38,6 +42,11 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+	}
+
+	h2 {
+		text-align: center;
+		font-weight: 900;
 	}
 
 	footer {
