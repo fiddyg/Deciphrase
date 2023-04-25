@@ -42,9 +42,9 @@
 				icon: 'success',
 				confirmButtonText: 'Nice!',
 				confirmButtonColor: 'black',
-			}) .then((result) => {
-				if (result.isConfirmed) window.location.reload()
-			})
+			})// }) .then((result) => {
+			// 	if (result.isConfirmed) window.location.reload()
+			// })
 
 			user.push(score)
             
