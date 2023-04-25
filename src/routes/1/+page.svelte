@@ -3,5 +3,5 @@
 </script>
 
 <main>
-	<Game prev='/3' next='/2' goToPrev='3' goToNext='2' maxScore='100' title='1: Easy' subtract='20'/>
+	<Game prev='/3' next='/2' goToPrev='3' goToNext='2' maxScore='100' title='1: Easy' subtract='20' phrasesChoose='easyPhrases' correctPhrasesChoose='correctEasyPhrases'/>
 </main>

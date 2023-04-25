@@ -1,16 +1,20 @@
 <script lang="ts">
 	import { phrases, correctPhrases } from './2/mediumPhrases.js';
+    import { easyPhrases, easyCorrectPhrases, mediumPhrases, mediumCorrectPhrases, hardPhrases, hardCorrectPhrases } from './phrases.js';
 	import Swal from 'sweetalert2';
 	import { page } from '$app/stores';
 
+    export let phrasesChoose
 
-	let length = phrases.length;
+    export let correctPhrasesChoose
+
+	let length = phrasesChoose.length;
 
 	let randomNumber = Math.floor(Math.random() * length)
 
-	let randomPhrase = phrases[randomNumber].join(' ')
+	let randomPhrase = phrasesChoose[randomNumber].join(' ')
 
-	let correctPhrase = correctPhrases[randomNumber]
+	let correctPhrase = correctPhrasesChoose[randomNumber]
 
 	let maxGuesses = 5
 	
