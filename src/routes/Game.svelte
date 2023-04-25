@@ -18,7 +18,7 @@
 
 	let maxGuesses = 5
 	
-	let score
+	export let score
 
     export let maxScore
 
@@ -32,7 +32,7 @@
 
 	let mode2 = ['Medium']
 
-    export let user: any = []
+    export let user: any = [{score}]
 	
 	const click = () => {
 		if (input.value === correctPhrase) {

@@ -2,19 +2,12 @@
 	import Header from './Header.svelte';
 	import HowToPlay from './HowToPlay.svelte';
 	import user from './Game.svelte'
-
-	let array = [1, 2]
-	array.forEach(element => {
-		console.log(element)
-	});
 </script>
 <div class="app">
 	<Header />
 
 	<main>
 		<HowToPlay />
-
-		<h2>Playing as: Guest</h2>
 
 		<slot />
 	</main>
