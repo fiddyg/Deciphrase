@@ -17,9 +17,9 @@
 			<a href="/"><span class="material-symbols-outlined">home</span></a>
 		</span>
 
-		<span aria-current={$page.url.pathname === '/leaderboard' ? 'page' : undefined}>
-			<a href="/leaderboard"><span class="material-symbols-outlined">leaderboard</span></a>
-		</span>
+		<!-- <span aria-current={$page.url.pathname === '/music' ? 'page' : undefined}>
+			<a href="/music"><span class="material-symbols-outlined">leaderboard</span></a>
+		</span> -->
 	</nav>
 	
 	
